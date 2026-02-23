@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{00000000-0000-0000-0000-000000000000}</ProjectGuid>
+    <ProjectGuid>{D6EA4667-01EF-4F0C-93C3-4B1C522B62B1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <NoStandardLibraries>false</NoStandardLibraries>
     <AssemblyName>WindowsApplication</AssemblyName>
@@ -29,6 +29,9 @@
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>SumStories</RootNamespace>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -38,6 +41,60 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-merge-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\push-to-checkout.sample" />
+    <None Include=".git\hooks\sendemail-validate.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\main" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\objects\10\699d8d3aadab46a5b7bb59940b976255869932" />
+    <None Include=".git\objects\2f\195f7b408ddd32c1b0aa5a158e023e76fd9aef" />
+    <None Include=".git\objects\b6\e032b55b85a8f3f23de574d8a0b129646373de" />
+    <None Include=".git\objects\c2\8709216637f24d2343aa20ae6a5b7472404a01" />
+    <None Include=".git\objects\f3\52baeef8ddfc23fdc53b61b7e212fe5be5a04a" />
+    <None Include=".git\objects\pack\pack-01c8650abeaf4f83a5ce19840e92a3aea2de4a3f.idx" />
+    <None Include=".git\objects\pack\pack-01c8650abeaf4f83a5ce19840e92a3aea2de4a3f.pack" />
+    <None Include=".git\objects\pack\pack-01c8650abeaf4f83a5ce19840e92a3aea2de4a3f.rev" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\main" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\sumstories\FileContentIndex\d3f9e24c-8336-410d-bed3-5bd671c4b449.vsidx" />
+    <None Include=".vs\sumstories\FileContentIndex\read.lock" />
+    <None Include=".vs\sumstories\v17\.wsuo" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="elements\Attribute.cs" />
+    <Compile Include="elements\Category.cs" />
+    <Compile Include="elements\Element.cs" />
+    <Compile Include="elements\Folder.cs" />
+    <Compile Include="elements\IElement.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\sumstories\FileContentIndex\merges\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
   <ProjectExtensions>
