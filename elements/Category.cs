@@ -1,6 +1,6 @@
 namespace elements;
 
 public class Category {
-	String Name { get; set; }
+	string Name { get; set; }
 	Attribute [] DefaultAttributes { get; }
 }

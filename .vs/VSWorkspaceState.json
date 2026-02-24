@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\elements"
+    "\\elements",
+    "\\obj",
+    "\\obj\\x86",
+    "\\obj\\x86\\Debug",
+    "\\obj\\x86\\Release"
   ],
+  "SelectedNode": "\\SumStories.sln",
   "PreviewInSolutionExplorer": false
 }

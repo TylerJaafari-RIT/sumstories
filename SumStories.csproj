@@ -86,6 +86,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="elements\Attribute.cs" />
+    <Compile Include="elements\AttributeValue.cs" />
     <Compile Include="elements\Category.cs" />
     <Compile Include="elements\Element.cs" />
     <Compile Include="elements\Folder.cs" />
