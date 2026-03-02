@@ -1,15 +1,15 @@
-namespace elements;
+namespace sumstories.elements;
 
 using System.Collections.Generic;
 
-public class Folder: IElement {
+public class Folder: Element {
 	List<Element> Items { get; }
 
-	public void addItem(IElement item) { Items.Add(item); }
+	public void AddItem(Element item) { Items.Add(item); }
 
-	public void removeItem(IElement item) { Items.Remove(item); }
+	public void RemoveItem(Element item) { Items.Remove(item); }
 
-	public void removeItem(string name) {
+	public void RemoveItem(string name) {
 		// TODO: implement
 	}
 }

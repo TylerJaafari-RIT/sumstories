@@ -1,13 +1,7 @@
-namespace elements;
-using System.Collections.Generic;
+namespace sumstories.elements;
 
-public class Element : IElement {
-    public string Name { get; set; }
-    public Category Category { get; set; }
+public abstract class Element {
+	string Name { get; set; }
 
-    public List<Attribute> Attributes { get; }
-
-    public void addAttribute(Attribute attribute) {
-        Attributes.Add(attribute);
-	}
+	Category Category { get; set; }
 }

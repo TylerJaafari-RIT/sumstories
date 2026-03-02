@@ -1,4 +1,4 @@
-namespace elements;
+namespace sumstories.elements;
 
 public class Category {
 	string Name { get; set; }
