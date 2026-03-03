@@ -7,9 +7,19 @@ public class Program {
 		bool shutdown = false;
 
 		while(!shutdown) {
-			string input = Console.ReadLine();
-			
-			
+			var input = Console.ReadLine();
+
+			if (input == null) continue;
+
+			args = input.Split(" ");
+
+			/// The commands implemented here will form the basis for the REST API
+			/** CORE COMMANDS WE MUST IMPLEMENT:
+			 *  - Create element (includes folder)
+			 *  - Delete element
+			 *  - Edit element
+			 *  
+			 */
 		}
 	}
 }
