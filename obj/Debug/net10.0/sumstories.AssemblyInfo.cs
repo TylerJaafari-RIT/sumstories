@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("sumstories")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46c6f20cb6c2015d20ec11ea95bdbe8c974cc5f2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+482ab12ec24069777128d2962cbe68ca5b038cf3")]
 [assembly: System.Reflection.AssemblyProductAttribute("sumstories")]
 [assembly: System.Reflection.AssemblyTitleAttribute("sumstories")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

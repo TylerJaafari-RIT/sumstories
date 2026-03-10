@@ -1,7 +1,7 @@
 namespace sumstories.elements;
 
 public abstract class Element {
-	string Name { get; set; }
+	public string Name { get; set; }
 
-	Category Category { get; set; }
+	public Category Category { get; set; }
 }

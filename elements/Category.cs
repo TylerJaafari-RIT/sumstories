@@ -1,6 +1,6 @@
 namespace sumstories.elements;
 
 public class Category {
-	string Name { get; set; }
-	Attribute [] DefaultAttributes { get; }
+	public string Name { get; set; }
+	public Attribute [] DefaultAttributes { get; }
 }
