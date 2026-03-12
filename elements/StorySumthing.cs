@@ -7,4 +7,10 @@ public class StorySumthing : Element {
     public void AddAttribute(Attribute attribute) {
         Attributes.Add(attribute);
 	}
+
+    public StorySumthing(string Name, Category Category) {
+        this.Name = Name;
+        this.Category = Category;
+        Attributes = new List<Attribute>();
+    }
 }
