@@ -5,9 +5,16 @@ using System.Text;
 namespace sumstories.elements;
 
 internal class ElementFactory {
-	Element DefaultElement { get; set; }
 
-	List<Attribute> Attributes { get; set; }
+	public Element DefaultElement { get; set; }
+
+	public ElementFactory() {
+		DefaultElement = new StorySumthing("New Sumthing", Category.NONE);
+	}
+
+	public ElementFactory(Category category) {
+		DefaultElement = new StorySumthing(category.Name, category);
+	}
 
 	public Element CreateSumthing(Category category) {
 		string name = "New " + category.Name;
