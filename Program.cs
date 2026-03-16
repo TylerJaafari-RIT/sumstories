@@ -16,10 +16,7 @@ public class Program {
 	}
 
 	///////////////////////// FACTORIES /////////////////////////
-	/// Folders
-	static ElementFactory FolderFactory = new ElementFactory();
-
-	// Elements
+	static ElementFactory elementFactory = new ElementFactory();
 	/////////////////////////////////////////////////////////////
 
 	static void Main(string [] args) {

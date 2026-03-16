@@ -5,7 +5,17 @@ using System.Collections.Generic;
 public class Folder: Element {
 	public List<Element> Items { get; }
 
-	public void AddItem(Element item) { 
+	public Folder(string Name, Category Category) {
+		this.Name = Name;
+		this.Category = Category;
+		this.Items = new List<Element>();
+	}
+
+	public Folder() : this("New Folder", Category.NONE) {	}
+
+	public Folder(string Name) : this(Name, Category.NONE) {	}
+
+	public void AddItem(Element item) {
 		if (this.Category.Equals(Category.NONE) || this.Category.Equals(item.Category))
 			Items.Add(item);
 		else

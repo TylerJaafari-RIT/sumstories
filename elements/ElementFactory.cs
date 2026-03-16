@@ -13,7 +13,11 @@ internal class ElementFactory {
 	}
 
 	public ElementFactory(Category category) {
-		DefaultElement = new StorySumthing(category.Name, category);
+		DefaultElement = new StorySumthing(category);
+	}
+
+	public ElementFactory(Element element) {
+		DefaultElement = element;
 	}
 
 	public Element CreateSumthing(Category category) {
@@ -22,6 +26,9 @@ internal class ElementFactory {
 	}
 
 	public Element CreateSumthing(string name, Category category) {
-		return new StorySumthing(name, category);
+		if (DefaultElement is Folder)
+			return new Folder(name, category);
+		else
+			return new StorySumthing(name, category);
 	}
 }
