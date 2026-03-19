@@ -3,20 +3,10 @@ using System;
 using System.IO;
 
 public class Program {
-
-	// might not need this
-	class InputProcessor {
-		static Element CreateElement() {
-			throw new NotImplementedException();
-		}
-
-		static Element CreateElement(string name) {
-			throw new NotImplementedException();
-		}
-	}
-
-	///////////////////////// FACTORIES /////////////////////////
+	////////////////////////// FIELDS ///////////////////////////
 	static ElementFactory elementFactory = new ElementFactory();
+
+	static Dictionary<int, Element> Elements = new Dictionary<int, Element>();
 	/////////////////////////////////////////////////////////////
 
 	static void Main(string [] args) {

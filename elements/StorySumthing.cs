@@ -3,9 +3,9 @@ namespace sumstories.elements;
 using System.Collections.Generic;
 
 public class StorySumthing : Element {
-    public List<Attribute> Attributes { get; }
+    public List<IAttribute> Attributes { get; }
 
-    public void AddAttribute(Attribute attribute) {
+    public void AddAttribute(IAttribute attribute) {
         Attributes.Add(attribute);
 	}
 

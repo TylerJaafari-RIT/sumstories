@@ -19,7 +19,7 @@ public class Folder: Element {
 		if (this.Category.Equals(Category.NONE) || this.Category.Equals(item.Category))
 			Items.Add(item);
 		else
-			Console.Error.WriteLine($"This folder is for {Category} elements and cannot store a {item.Category}");
+			Console.Error.WriteLine($"This folder is for {Category} elements and cannot store {item.Category} elements.");
 	}
 
 	public void RemoveItem(Element item) { Items.Remove(item); }
