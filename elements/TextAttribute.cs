@@ -18,4 +18,12 @@ internal class TextAttribute: IAttribute {
 	public override string ToString() {
 		return $"{Name}: {Value}";
 	}
+
+	/// <summary>
+	/// Creates a deep copy of this attribute.
+	/// </summary>
+	/// <returns></returns>
+	public IAttribute Clone() {
+		return new TextAttribute(this.Name, this.Value);
+	}
 }

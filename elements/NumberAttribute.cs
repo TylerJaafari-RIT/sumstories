@@ -37,11 +37,27 @@ internal class NumberAttribute: IAttribute {
 		this.Accuracy = Accuracy.Range;
 	}
 
+	public NumberAttribute(NumberAttribute other) {
+		this.Name = other.Name;
+		this.Value = other.Value;
+		this.Unit = other.Unit;
+		this.Accuracy = other.Accuracy;
+		this.MaxValue = other.MaxValue;
+	}
+
 	public override string ToString() {
 		if (Accuracy == Accuracy.Range) {
 			return $"{Name}: {Value} - {MaxValue} {Unit}";
 		} else {
 			return $"{Name}: {(Accuracy == Accuracy.Approximate ? "~" : "")}{Value} {Unit}";
 		}
+	}
+
+	/// <summary>
+	/// Creates a deep copy of this attribute.
+	/// </summary>
+	/// <returns></returns>
+	public IAttribute Clone() {
+		return new NumberAttribute(this);
 	}
 }
