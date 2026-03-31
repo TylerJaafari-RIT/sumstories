@@ -5,9 +5,9 @@ using System.Text;
 namespace sumstories.elements.timeline;
 
 internal class Timeline {
-	string Name { get; set; }
-	List<Era> Eras { get; }
-	List<TimelineEvent> Events { get; }
+	public string Name { get; set; }
+	public List<Era> Eras { get; }
+	public List<TimelineEvent> Events { get; }
 
 	public Timeline() {
 

@@ -1,22 +1,28 @@
 namespace sumstories.elements;
 
-internal class NumberAttribute : IAttribute {
+internal class NumberAttribute: IAttribute {
 	public string Name { get; set; }
-	public int Value { get; set; }
-	public Accuracy Accuracy { get;
+	public int Value { get; set; } = 0;
+	public string Unit { get; set; } = "";
+	private Accuracy accuracy = Accuracy.Exact;
+	public Accuracy Accuracy {
+		get => accuracy;
 		set {
-			if(value == Accuracy.Exact || value == Accuracy.Approximate) {
+			if (value == Accuracy.Exact || value == Accuracy.Approximate) {
 				MaxValue = null;
 			} else {
 				MaxValue = Value;
 			}
+			accuracy = value;
 		}
-	} = Accuracy.Exact;
+	}
 	public int? MaxValue { get; set; }
 
-	public NumberAttribute(string Name) {
+	public NumberAttribute(string Name) => this.Name = Name;
+
+	public NumberAttribute(string Name, string Unit) {
 		this.Name = Name;
-		this.Value = 0;
+		this.Unit = Unit;
 	}
 
 	public NumberAttribute(string Name, int Value) {
@@ -29,5 +35,13 @@ internal class NumberAttribute : IAttribute {
 		this.Value = Min;
 		this.MaxValue = Max;
 		this.Accuracy = Accuracy.Range;
+	}
+
+	public override string ToString() {
+		if (Accuracy == Accuracy.Range) {
+			return $"{Name}: {Value} - {MaxValue} {Unit}";
+		} else {
+			return $"{Name}: {(Accuracy == Accuracy.Approximate ? "~" : "")}{Value} {Unit}";
+		}
 	}
 }

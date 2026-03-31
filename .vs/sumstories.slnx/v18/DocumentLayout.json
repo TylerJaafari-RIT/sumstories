@@ -7,56 +7,56 @@
       "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|f:\\tyler\\documents\\college, part 2\\swen-780 (capstone)\\sumstories\\elements\\elementfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:elements\\elementfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|f:\\tyler\\documents\\college, part 2\\swen-780 (capstone)\\sumstories\\elements\\element.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:elements\\element.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|f:\\tyler\\documents\\college, part 2\\swen-780 (capstone)\\sumstories\\elements\\timeline\\timeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:elements\\timeline\\timeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|f:\\tyler\\documents\\college, part 2\\swen-780 (capstone)\\sumstories\\elements\\storysumthing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:elements\\storysumthing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|f:\\tyler\\documents\\college, part 2\\swen-780 (capstone)\\sumstories\\elements\\folder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:elements\\folder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|f:\\tyler\\documents\\college, part 2\\swen-780 (capstone)\\sumstories\\elements\\accuracy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:elements\\accuracy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|f:\\tyler\\documents\\college, part 2\\swen-780 (capstone)\\sumstories\\elements\\timeline\\date.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:elements\\timeline\\date.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|f:\\tyler\\documents\\college, part 2\\swen-780 (capstone)\\sumstories\\elements\\timeline\\era.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:elements\\timeline\\era.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|f:\\tyler\\documents\\college, part 2\\swen-780 (capstone)\\sumstories\\elements\\timeline\\timelineevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:elements\\timeline\\timelineevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|f:\\tyler\\documents\\college, part 2\\swen-780 (capstone)\\sumstories\\elements\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:elements\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|f:\\tyler\\documents\\college, part 2\\swen-780 (capstone)\\sumstories\\elements\\attributevalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:elements\\attributevalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|f:\\tyler\\documents\\college, part 2\\swen-780 (capstone)\\sumstories\\elements\\attribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:elements\\attribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|f:\\tyler\\documents\\college, part 2\\swen-780 (capstone)\\sumstories\\elements\\numberattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:elements\\numberattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|f:\\tyler\\documents\\college, part 2\\swen-780 (capstone)\\sumstories\\elements\\textattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:elements\\textattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|f:\\tyler\\documents\\college, part 2\\swen-780 (capstone)\\sumstories\\elements\\timeline\\timeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:elements\\timeline\\timeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|f:\\tyler\\documents\\college, part 2\\swen-780 (capstone)\\sumstories\\elements\\element.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:elements\\element.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|f:\\tyler\\documents\\college, part 2\\swen-780 (capstone)\\sumstories\\elements\\attribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:elements\\attribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|f:\\tyler\\documents\\college, part 2\\swen-780 (capstone)\\sumstories\\elements\\accuracy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:elements\\accuracy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|f:\\tyler\\documents\\college, part 2\\swen-780 (capstone)\\sumstories\\elements\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:elements\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|f:\\tyler\\documents\\college, part 2\\swen-780 (capstone)\\sumstories\\elements\\folder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:elements\\folder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|f:\\tyler\\documents\\college, part 2\\swen-780 (capstone)\\sumstories\\elements\\timeline\\era.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:elements\\timeline\\era.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|f:\\tyler\\documents\\college, part 2\\swen-780 (capstone)\\sumstories\\elements\\timeline\\date.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:elements\\timeline\\date.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|f:\\tyler\\documents\\college, part 2\\swen-780 (capstone)\\sumstories\\elements\\elementfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:elements\\elementfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|f:\\tyler\\documents\\college, part 2\\swen-780 (capstone)\\sumstories\\elements\\timeline\\timelineevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C040CA29-E2DB-56E7-5DAF-50B7D936B3FC}|sumstories.csproj|solutionrelative:elements\\timeline\\timelineevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -76,170 +76,166 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAowBIAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAcwLgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-01T21:36:18.147Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ElementFactory.cs",
-              "DocumentMoniker": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\ElementFactory.cs",
-              "RelativeDocumentMoniker": "elements\\ElementFactory.cs",
-              "ToolTip": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\ElementFactory.cs",
-              "RelativeToolTip": "elements\\ElementFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T20:24:05.449Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Element.cs",
-              "DocumentMoniker": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\Element.cs",
-              "RelativeDocumentMoniker": "elements\\Element.cs",
-              "ToolTip": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\Element.cs",
-              "RelativeToolTip": "elements\\Element.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T21:38:08.049Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Folder.cs",
-              "DocumentMoniker": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\Folder.cs",
-              "RelativeDocumentMoniker": "elements\\Folder.cs",
-              "ToolTip": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\Folder.cs",
-              "RelativeToolTip": "elements\\Folder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T21:36:46.832Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StorySumthing.cs",
-              "DocumentMoniker": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\StorySumthing.cs",
-              "RelativeDocumentMoniker": "elements\\StorySumthing.cs",
-              "ToolTip": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\StorySumthing.cs",
-              "RelativeToolTip": "elements\\StorySumthing.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAkwBEAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T21:36:43.996Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Accuracy.cs",
-              "DocumentMoniker": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\Accuracy.cs",
-              "RelativeDocumentMoniker": "elements\\Accuracy.cs",
-              "ToolTip": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\Accuracy.cs",
-              "RelativeToolTip": "elements\\Accuracy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T23:46:24.981Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Date.cs",
-              "DocumentMoniker": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\timeline\\Date.cs",
-              "RelativeDocumentMoniker": "elements\\timeline\\Date.cs",
-              "ToolTip": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\timeline\\Date.cs",
-              "RelativeToolTip": "elements\\timeline\\Date.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T23:42:43.821Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Era.cs",
-              "DocumentMoniker": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\timeline\\Era.cs",
-              "RelativeDocumentMoniker": "elements\\timeline\\Era.cs",
-              "ToolTip": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\timeline\\Era.cs",
-              "RelativeToolTip": "elements\\timeline\\Era.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T23:41:01.732Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TimelineEvent.cs",
-              "DocumentMoniker": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\timeline\\TimelineEvent.cs",
-              "RelativeDocumentMoniker": "elements\\timeline\\TimelineEvent.cs",
-              "ToolTip": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\timeline\\TimelineEvent.cs",
-              "RelativeToolTip": "elements\\timeline\\TimelineEvent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T23:23:34.568Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Category.cs",
-              "DocumentMoniker": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\Category.cs",
-              "RelativeDocumentMoniker": "elements\\Category.cs",
-              "ToolTip": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\Category.cs",
-              "RelativeToolTip": "elements\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T21:36:41.751Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AttributeValue.cs",
-              "DocumentMoniker": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\AttributeValue.cs",
-              "RelativeDocumentMoniker": "elements\\AttributeValue.cs",
-              "ToolTip": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\AttributeValue.cs",
-              "RelativeToolTip": "elements\\AttributeValue.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T21:36:40.483Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "Attribute.cs",
               "DocumentMoniker": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\Attribute.cs",
               "RelativeDocumentMoniker": "elements\\Attribute.cs",
               "ToolTip": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\Attribute.cs",
               "RelativeToolTip": "elements\\Attribute.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-01T21:36:19.774Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "TextAttribute.cs",
               "DocumentMoniker": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\TextAttribute.cs",
               "RelativeDocumentMoniker": "elements\\TextAttribute.cs",
               "ToolTip": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\TextAttribute.cs",
               "RelativeToolTip": "elements\\TextAttribute.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-01T23:55:36.368Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 3,
+              "Title": "NumberAttribute.cs",
+              "DocumentMoniker": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\NumberAttribute.cs",
+              "RelativeDocumentMoniker": "elements\\NumberAttribute.cs",
+              "ToolTip": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\NumberAttribute.cs",
+              "RelativeToolTip": "elements\\NumberAttribute.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAIwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T18:14:40.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Element.cs",
+              "DocumentMoniker": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\Element.cs",
+              "RelativeDocumentMoniker": "elements\\Element.cs",
+              "ToolTip": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\Element.cs",
+              "RelativeToolTip": "elements\\Element.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T21:38:08.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StorySumthing.cs",
+              "DocumentMoniker": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\StorySumthing.cs",
+              "RelativeDocumentMoniker": "elements\\StorySumthing.cs",
+              "ToolTip": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\StorySumthing.cs",
+              "RelativeToolTip": "elements\\StorySumthing.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T21:36:43.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Folder.cs",
+              "DocumentMoniker": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\Folder.cs",
+              "RelativeDocumentMoniker": "elements\\Folder.cs",
+              "ToolTip": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\Folder.cs",
+              "RelativeToolTip": "elements\\Folder.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAuwDkAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T21:36:46.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Date.cs",
+              "DocumentMoniker": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\timeline\\Date.cs",
+              "RelativeDocumentMoniker": "elements\\timeline\\Date.cs",
+              "ToolTip": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\timeline\\Date.cs",
+              "RelativeToolTip": "elements\\timeline\\Date.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T23:42:43.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Era.cs",
+              "DocumentMoniker": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\timeline\\Era.cs",
+              "RelativeDocumentMoniker": "elements\\timeline\\Era.cs",
+              "ToolTip": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\timeline\\Era.cs",
+              "RelativeToolTip": "elements\\timeline\\Era.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T23:41:01.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Timeline.cs",
               "DocumentMoniker": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\timeline\\Timeline.cs",
               "RelativeDocumentMoniker": "elements\\timeline\\Timeline.cs",
               "ToolTip": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\timeline\\Timeline.cs",
               "RelativeToolTip": "elements\\timeline\\Timeline.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-01T23:18:37.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Accuracy.cs",
+              "DocumentMoniker": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\Accuracy.cs",
+              "RelativeDocumentMoniker": "elements\\Accuracy.cs",
+              "ToolTip": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\Accuracy.cs",
+              "RelativeToolTip": "elements\\Accuracy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T23:46:24.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Category.cs",
+              "DocumentMoniker": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\Category.cs",
+              "RelativeDocumentMoniker": "elements\\Category.cs",
+              "ToolTip": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\Category.cs",
+              "RelativeToolTip": "elements\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T21:36:41.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ElementFactory.cs",
+              "DocumentMoniker": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\ElementFactory.cs",
+              "RelativeDocumentMoniker": "elements\\ElementFactory.cs",
+              "ToolTip": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\ElementFactory.cs",
+              "RelativeToolTip": "elements\\ElementFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T18:04:54.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TimelineEvent.cs",
+              "DocumentMoniker": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\timeline\\TimelineEvent.cs",
+              "RelativeDocumentMoniker": "elements\\timeline\\TimelineEvent.cs",
+              "ToolTip": "F:\\Tyler\\Documents\\College, Part 2\\SWEN-780 (Capstone)\\sumstories\\elements\\timeline\\TimelineEvent.cs",
+              "RelativeToolTip": "elements\\timeline\\TimelineEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T23:23:34.568Z"
             }
           ]
         }

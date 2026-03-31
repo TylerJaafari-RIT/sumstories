@@ -2,9 +2,9 @@
 
 // EACH ERA SHOULD HAVE ITS OWN ARTICLE
 internal class Era {
-	string Name { get; set; }
-	string Description { get; set; }
-	Timeline Timeline { get; set; }
-	int StartYear { get; set; }
-	int EndYear { get; set; }
+	public string Name { get; set; }
+	public string Description { get; set; }
+	public Timeline Timeline { get; set; }
+	public int StartYear { get; set; }
+	public int EndYear { get; set; }
 }
