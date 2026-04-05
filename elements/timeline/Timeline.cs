@@ -10,7 +10,9 @@ internal class Timeline {
 	public List<TimelineEvent> Events { get; }
 
 	public Timeline() {
-
+		Name = "New Timeline";
+		Eras = new List<Era>();
+		Events = new List<TimelineEvent>();
 	}
 
 	public void AddEvent(TimelineEvent tEvent) {

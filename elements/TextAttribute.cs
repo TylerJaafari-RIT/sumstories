@@ -20,7 +20,7 @@ internal class TextAttribute: IAttribute {
 	}
 
 	/// <summary>
-	/// Creates a deep copy of this attribute.
+	/// Creates a deep copy of this text attribute.
 	/// </summary>
 	/// <returns></returns>
 	public IAttribute Clone() {

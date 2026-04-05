@@ -54,7 +54,7 @@ internal class NumberAttribute: IAttribute {
 	}
 
 	/// <summary>
-	/// Creates a deep copy of this attribute.
+	/// Creates a deep copy of this number attribute.
 	/// </summary>
 	/// <returns></returns>
 	public IAttribute Clone() {
