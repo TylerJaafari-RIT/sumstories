@@ -1,8 +1,29 @@
 ﻿using sumstories.elements;
 using System;
 using System.IO;
+using Npgsql;
+using Microsoft.Extensions.Configuration;
 
 public class Program {
+	public record DbConfig {
+		public string Host { get; init; } = "localhost";
+		public int Port { get; init; } = 5432;
+		public string Database { get; init; } = "sumstories";
+		public string Username { get; init; } = "";
+		public string Password { get; init; } = "";
+	}
+	static string BuildConnectionString(IConfigurationSection config) {
+		NpgsqlConnectionStringBuilder builder = new () {
+			Database = config["Database"],
+			Host = config["Host"],
+			Port = int.Parse(config["Port"]),
+			Username = config["Username"],
+			Password = config["Password"]
+		};
+
+		return builder.ConnectionString;
+	}
+
 	private const string helpMsgNoCategory = "If uncategorized, pass \'none\' to category argument. Name is optional.";
 
 	////////////////////////// FIELDS ///////////////////////////
@@ -57,10 +78,30 @@ public class Program {
 		return fullSplit.ToArray();
 	}
 
-	static void Main(string [] args) {
+	static async Task Main(string [] args) {
 		Console.WriteLine("SumStories App Version 0.1");
 		Console.WriteLine("Copyright (c) 2026 Tyler Jaafari. All rights reserved.");
 		bool shutdown = false;
+
+		Console.WriteLine("\nConnecting to server...\n");
+
+		var configRoot = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json", false, true).Build();
+		var dbConfig = configRoot.GetSection("Database");
+		string connectionString = BuildConnectionString(dbConfig);
+		Console.WriteLine("Connection String: {0}", connectionString);
+
+		await using var connection = new NpgsqlConnection(connectionString);
+
+		//connection.Open(); // this is also usable for a non-asynchronous approach
+		await connection.OpenAsync();
+
+		string sql_command = "SELECT * FROM accounts";
+		await using var command = new NpgsqlCommand(sql_command, connection);
+		await using var reader = await command.ExecuteReaderAsync();
+
+		while (await reader.ReadAsync()) {
+			Console.WriteLine(reader.GetColumnSchema().Select(column => $"{column.ColumnName}: {column.DataTypeName}"));
+		}
 
 		while (!shutdown) {
 			var input = Console.ReadLine();
