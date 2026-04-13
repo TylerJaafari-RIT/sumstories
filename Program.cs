@@ -1,17 +1,20 @@
-﻿using sumstories.elements;
+﻿using Microsoft.Extensions.Configuration;
+using Npgsql;
+using sumstories.elements;
 using System;
 using System.IO;
-using Npgsql;
-using Microsoft.Extensions.Configuration;
+using System.Security.Cryptography;
+using System.Text;
 
 public class Program {
-	public record DbConfig {
-		public string Host { get; init; } = "localhost";
-		public int Port { get; init; } = 5432;
-		public string Database { get; init; } = "sumstories";
-		public string Username { get; init; } = "";
-		public string Password { get; init; } = "";
+	public class Account(long ID, string Username, string Email, string Salt, string SessionKey) {
+		public long ID { get; } = ID;
+		public string Username { get; set; } = Username;
+		public string Email { get; set; } = Email;
+		public string Salt { get; set; } = Salt;
+		public string SessionKey { get; set; } = SessionKey;
 	}
+
 	static string BuildConnectionString(IConfigurationSection config) {
 		NpgsqlConnectionStringBuilder builder = new () {
 			Database = config["Database"],
@@ -24,9 +27,41 @@ public class Program {
 		return builder.ConnectionString;
 	}
 
-	private const string helpMsgNoCategory = "If uncategorized, pass \'none\' to category argument. Name is optional.";
+	static string GenerateSalt() {
+		var rng = RandomNumberGenerator.Create();
+		byte[] random = new byte[64];
+		rng.GetBytes(random);
+		byte[] saltHash = SHA512.HashData(random);
+		return Convert.ToBase64String(saltHash);
+	}
+
+	// Compute SHA-512(salt || password) and return Base64 string.
+	static string ComputeHash(string password, string salt) {
+		byte[] saltyBytes = Convert.FromBase64String(salt);
+		byte[] pwdBytes = Encoding.UTF8.GetBytes(password);
+
+		byte[] combined = new byte[saltyBytes.Length + pwdBytes.Length];
+		Buffer.BlockCopy(saltyBytes, 0, combined, 0, saltyBytes.Length);
+		Buffer.BlockCopy(pwdBytes, 0, combined, saltyBytes.Length, pwdBytes.Length);
+
+		byte[] hash = SHA512.HashData(combined);
+		return Convert.ToBase64String(hash);
+	}
+
+	static string GenerateSessionKey(int bytes = 32) {
+		byte[] data = RandomNumberGenerator.GetBytes(bytes);
+
+		string base64 = Convert.ToBase64String(data)
+			.Replace('+', '-')
+			.Replace('/', '_')
+			.TrimEnd('=');
+
+		return base64;
+	}
 
 	////////////////////////// FIELDS ///////////////////////////
+	private const string helpMsgNoCategory = "If uncategorized, pass \'none\' to category argument. Name is optional.";
+
 	static int idCounter = 1;
 
 	static Folder TheEverythingFolder = new Folder(ID: 0, "All Elements");
@@ -78,30 +113,36 @@ public class Program {
 		return fullSplit.ToArray();
 	}
 
+	static void LoadUserData(Account user) {
+		// should probably make this a static variable
+		string[] tables = [""];
+	}
+
 	static async Task Main(string [] args) {
 		Console.WriteLine("SumStories App Version 0.1");
 		Console.WriteLine("Copyright (c) 2026 Tyler Jaafari. All rights reserved.");
 		bool shutdown = false;
 
-		Console.WriteLine("\nConnecting to server...\n");
-
 		var configRoot = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json", false, true).Build();
 		var dbConfig = configRoot.GetSection("Database");
 		string connectionString = BuildConnectionString(dbConfig);
-		Console.WriteLine("Connection String: {0}", connectionString);
 
 		await using var connection = new NpgsqlConnection(connectionString);
 
 		//connection.Open(); // this is also usable for a non-asynchronous approach
 		await connection.OpenAsync();
 
-		string sql_command = "SELECT * FROM accounts";
-		await using var command = new NpgsqlCommand(sql_command, connection);
-		await using var reader = await command.ExecuteReaderAsync();
+		//string sql_command = "SELECT name FROM categories";
+		//await using var command = new NpgsqlCommand(sql_command, connection);
+		//await using var reader = await command.ExecuteReaderAsync();
 
-		while (await reader.ReadAsync()) {
-			Console.WriteLine(reader.GetColumnSchema().Select(column => $"{column.ColumnName}: {column.DataTypeName}"));
-		}
+		//while (await reader.ReadAsync()) {
+		//	Console.WriteLine("Reading from DB...");
+		//	Console.WriteLine(reader.GetString(0));
+		//}
+
+		Account? user = null;
+		Console.WriteLine("Welcome. Please login or register.");
 
 		while (!shutdown) {
 			var input = Console.ReadLine();
@@ -119,7 +160,119 @@ public class Program {
 			 *  - Add to/Remove from folder
 			 */
 			switch (args[0].ToLower()) {
+				case ("register"): {
+					if (args.Length != 4) {
+						Console.WriteLine("Usage: register <email> <username> <password>");
+						break;
+					}
+
+					string email = args[1];
+					string username = args[2];
+					string password = args[3];
+
+					// first we check if the user already exists
+					// email account recovery is probably a reach goal at this point
+					// TODO: Migrate to server class
+					string sqlText = "SELECT username, email FROM accounts WHERE username = @username OR email = @email";
+					await using (var selectCmd = new NpgsqlCommand(sqlText, connection)) {
+						selectCmd.Parameters.AddWithValue("username", username);
+						selectCmd.Parameters.AddWithValue("email", email);
+						await using var reader = await selectCmd.ExecuteReaderAsync();
+						if (await reader.ReadAsync()) {
+							if (reader.GetString(0).Equals(username, StringComparison.OrdinalIgnoreCase))
+								Console.WriteLine("This username is already taken.");
+							if (reader.GetString(1).Equals(email, StringComparison.OrdinalIgnoreCase))
+								Console.WriteLine("This email is already in use.");
+							break;
+						}
+					}
+					// end TODO
+					string salt = GenerateSalt();
+
+					string hashedPassword = ComputeHash(password, salt);
+					// TODO: Migrate to server class
+					sqlText = "INSERT INTO accounts (username, email, password, salt) VALUES " +
+							"(@username, @email, @password, @salt) RETURNING id";
+
+					using var insertCmd = new NpgsqlCommand(sqlText, connection);
+					insertCmd.Parameters.AddWithValue("username", username);
+					insertCmd.Parameters.AddWithValue("email", email);
+					insertCmd.Parameters.AddWithValue("password", hashedPassword);
+					insertCmd.Parameters.AddWithValue("salt", salt);
+					// end TODO
+
+					await using (var reader = await insertCmd.ExecuteReaderAsync()) {
+						if (await reader.ReadAsync()) {
+							Console.WriteLine($"User created with ID {reader.GetInt64(0)}\n" +
+								$"Please log in with your username and password");
+						} else {
+							Console.WriteLine("Error occurred creating new user.");
+						}
+					}
+
+					break;
+				}
+				case ("login"): {
+					if (args.Length != 3) {
+						Console.WriteLine("Usage: login <username> <password>");
+						break;
+					}
+					string username = args[1];
+					string password = args[2];
+
+					// TODO: Migrate to server class
+					string sqlText = "SELECT id, username, email, salt, password FROM accounts WHERE username = @username LIMIT 1;";
+
+					await using var cmd = new NpgsqlCommand(sqlText, connection);
+					cmd.Parameters.AddWithValue("username", username);
+					await using var reader = await cmd.ExecuteReaderAsync();
+					if(!await reader.ReadAsync()) {
+						Console.WriteLine("Username not found.");
+						break;
+					}
+					// end TODO
+
+					long dbId = reader.GetInt64(0);
+					string dbUsername = reader.GetString(1);
+					string dbEmail = reader.GetString(2);
+					string dbSalt = reader.IsDBNull(3) ? "" : reader.GetString(3);
+					string hashedPassword = reader.IsDBNull(4) ? "" : reader.GetString(4);
+
+					await reader.CloseAsync();
+
+					// verify password
+					//bool verified = false;
+					if (!string.IsNullOrEmpty(dbSalt) && !string.IsNullOrEmpty(hashedPassword)) {
+						string hash = ComputeHash(password, dbSalt);
+						byte[] inputBytes = Convert.FromBase64String(hash);
+						byte[] databaseBytes = Convert.FromBase64String(hashedPassword);
+
+						string sessionKey = GenerateSessionKey();
+
+						if (CryptographicOperations.FixedTimeEquals(inputBytes, databaseBytes)) {
+							user = new Account(dbId, dbUsername, dbEmail, dbSalt, sessionKey);
+							// TODO: Migrate to server class
+							// inserting directly into string should be fine here since these are not user inputs
+							sqlText = $"UPDATE accounts SET session_key = '{sessionKey}' WHERE id = {dbId}";
+							await using (var updateCmd = new NpgsqlCommand(sqlText, connection)) {
+								updateCmd.ExecuteNonQuery();
+							}
+							// end TODO
+							Console.WriteLine($"Welcome, {dbUsername}!");
+						} else {
+							Console.WriteLine("Invalid username or password.");
+						}
+					} else {
+						Console.WriteLine("No password or salt to compare to; something has gone terribly wrong!");
+					}
+					break;
+				}
 				case ("help"):
+					if (user is null) {
+						Console.WriteLine("login <username> <password> - attempt to log in to your account.\n" +
+							"register <email> <username> <password> - register a new account.");
+						break;
+					}
 					if (args.Length == 1) {
 						Console.WriteLine("create - make a new element or folder\n" +
 							"list - list all elements and their IDs\n" +
