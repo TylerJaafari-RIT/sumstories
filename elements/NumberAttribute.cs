@@ -1,6 +1,7 @@
 namespace sumstories.elements;
 
 internal class NumberAttribute: IAttribute {
+	public long ID { get; }
 	public string Name { get; set; }
 	public int Value { get; set; } = 0;
 	public string Unit { get; set; } = "";
@@ -16,28 +17,33 @@ internal class NumberAttribute: IAttribute {
 			accuracy = value;
 		}
 	}
-	public int? MaxValue { get; set; }
+	public long? MaxValue { get; set; }
 
-	public NumberAttribute(string Name) => this.Name = Name;
+	public NumberAttribute(long ID, string Name) {
+		this.ID = ID;
+		this.Name = Name;
+	}
 
 	public NumberAttribute(string Name, string Unit) {
 		this.Name = Name;
 		this.Unit = Unit;
 	}
 
-	public NumberAttribute(string Name, int Value) {
+	public NumberAttribute(long ID, string Name, int Value) {
+		this.ID = ID;
 		this.Name = Name;
 		this.Value = Value;
 	}
 
-	public NumberAttribute(string Name, int Min, int Max) {
+	public NumberAttribute(string Name, int Min, long Max) {
 		this.Name = Name;
 		this.Value = Min;
 		this.MaxValue = Max;
 		this.Accuracy = Accuracy.Range;
 	}
 
-	public NumberAttribute(NumberAttribute other) {
+    public NumberAttribute(NumberAttribute other, long ID) {
+		this.ID = ID;
 		this.Name = other.Name;
 		this.Value = other.Value;
 		this.Unit = other.Unit;
@@ -57,7 +63,7 @@ internal class NumberAttribute: IAttribute {
 	/// Creates a deep copy of this number attribute.
 	/// </summary>
 	/// <returns></returns>
-	public IAttribute Clone() {
-		return new NumberAttribute(this);
+	public IAttribute Clone(long ID) {
+		return new NumberAttribute(this, ID);
 	}
 }
