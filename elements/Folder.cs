@@ -5,17 +5,26 @@ using System.Collections.Generic;
 public class Folder: Element {
 	public List<Element> Items { get; }
 
-	public Folder(int ID, string Name, Category Category): base(ID) {
+	public Folder(long ID, string Name, Category Category): base(ID) {
 		this.Name = Name;
 		this.Category = Category;
 		this.Items = new List<Element>();
 	}
 
-	public Folder(int ID): this(ID, "New Folder", Category.NONE) { }
+	public Folder(long ID): this(ID, "New Folder", Category.NONE) { }
 
-	public Folder(int ID, string Name): this(ID, Name, Category.NONE) {	}
+	public Folder(long ID, string Name): this(ID, Name, Category.NONE) {	}
 
-	public Folder(int ID, Category Category): this(ID, "New Folder", Category) { }
+	public Folder(long ID, Category Category): this(ID, "New Folder", Category) { }
+
+	public Element? GetItemById(long ID) {
+		foreach (Element item in Items) {
+			if (item.ID == ID) {
+				return item;
+			}
+		}
+		return null;
+	}
 
 	public void AddItem(Element item) {
 		if (this.Category.Equals(Category.NONE) || this.Category.Equals(item.Category))
@@ -32,7 +41,7 @@ public class Folder: Element {
 		}
 	}
 
-	public void RemoveItem(int ID) {
+    public void RemoveItem(long ID) {
 		bool itemFound = false;
 		foreach (Element item in Items) {
 			if (item.ID == ID) {

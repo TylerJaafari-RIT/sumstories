@@ -30,19 +30,26 @@ public class StorySumthing: Element {
 		return att;
 	}
 
-	public StorySumthing(int ID, Category Category): this(ID, "New " + Category.Name, Category) {	}
+	public StorySumthing(long ID, Category Category): this(ID, "New " + Category.Name, Category) {	}
 
-	public StorySumthing(int ID, string Name, Category Category): base(ID) {
+	public StorySumthing(long ID, string Name, Category Category): base(ID) {
 		this.Name = Name;
 		this.Category = Category;
 		//Attributes = [.. Category.DefaultAttributes]; // simplified list init
 		// this language has so many neat shortcuts
 		// Edit: too bad we can't even use it here T_T
 
-		Attributes = [];
-		foreach (IAttribute attribute in Category.DefaultAttributes) {
-			Attributes.Add(attribute.Clone());
+        Attributes = [];
+        foreach (IAttribute attribute in Category.DefaultAttributes) {
+			// Clone given a default unassigned ID of 0
+			Attributes.Add(attribute.Clone(attribute.ID));
 		}
+	}
+
+	public StorySumthing(long ID, string Name, Category Category, List<IAttribute> attributes): base(ID) {
+		this.Name = Name;
+		this.Category = Category;
+		Attributes = attributes;
 	}
 
 	public override string ToString() {
