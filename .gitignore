@@ -3,3 +3,4 @@ obj/
 .editorconfig
 bin/
 appsettings.json
+.env/
